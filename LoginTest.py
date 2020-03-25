@@ -17,8 +17,7 @@ def main():
     userName.send_keys('shopeetest')
     passWord.send_keys('Shopee@2020')
     signIn.click()
-    assert (driver.find_element_by_xpath(
-        '/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[1]/td/img').is_displayed() == True)
+    assert (driver.find_element_by_name('findFlights').is_displayed() == True)
     print('Passed')
     driver.close()
 
