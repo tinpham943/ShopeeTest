@@ -13,7 +13,7 @@ class Login(unittest.TestCase):
         inst.driver.title
 
     def test_login_passed(self):
-        # get the search textbox
+        # get the login elements
         self.username_field = self.driver.find_element_by_name('userName')
         self.password_field = self.driver.find_element_by_name('password')
         self.login_button = self.driver.find_element_by_name('login')
